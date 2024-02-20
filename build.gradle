@@ -8,12 +8,11 @@ repositories {
 }
 
 allure {
-    allureReport {
+    report {
         version.set("2.25.0")
     }
-    adapter { // отвечает за появление папки allure-results
+    adapter {
         aspectjWeaver.set(true)
-        aspectjVersion.set("1.9.21")
         frameworks {
             junit5 {
                 adapterVersion.set("2.25.0")
@@ -21,6 +20,7 @@ allure {
         }
     }
 }
+
 
 repositories {
     mavenCentral()
