@@ -18,11 +18,11 @@ public class SelenideTest extends TestBase {
     @DisplayName("Проверка корректности имени Issue на странице Issue с помощью чистого Selenide")
     public void checkIssueWithSelenide() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-    open("https://github.com/");
-    $(".header-search-button").click();
-    $("#query-builder-test").setValue("eroshenkoam/allure-example").submit();
-    $(linkText("eroshenkoam/allure-example")).click();
-    $("#issues-tab").click();
-    $(withText("#80")).should(Condition.exist);
-}
+        open("https://github.com/");
+        $(".header-search-button").click();
+        $("#query-builder-test").setValue("eroshenkoam/allure-example").submit();
+        $(linkText("eroshenkoam/allure-example")).click();
+        $("#issues-tab").click();
+        $(withText("#80")).should(Condition.exist);
+    }
 }

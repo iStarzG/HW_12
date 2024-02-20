@@ -10,9 +10,9 @@ import static org.openqa.selenium.By.linkText;
 
 public class WebSteps {
     @Step("Открывает главную страницу Github")
-public void openPage() {
-    open("https://github.com/");
-}
+    public void openPage() {
+        open("https://github.com/");
+    }
 
     @Step("Клик на строку поиска")
     public void clickSearchInput() {

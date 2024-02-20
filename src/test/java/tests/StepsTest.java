@@ -19,10 +19,11 @@ import static org.openqa.selenium.By.linkText;
 public class StepsTest extends TestBase {
     private static final String repository = "eroshenkoam/allure-example";
     private static final int issue = 80;
-@Test
-@DisplayName("Проверка кнопки Issue в репозитории с помощью LambdaSteps")
-@Owner("iStarzG")
-@Severity(SeverityLevel.BLOCKER)
+
+    @Test
+    @DisplayName("Проверка кнопки Issue в репозитории с помощью LambdaSteps")
+    @Owner("iStarzG")
+    @Severity(SeverityLevel.BLOCKER)
 
     public void checkIssueWithLambdaSteps() {
         SelenideLogger.addListener("allure", new AllureSelenide());
